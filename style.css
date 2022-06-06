@@ -40,15 +40,18 @@
     justify-content: center;
 }
 
-.tasks-container{
+#tasks-container{
+    background-color: rgb(232, 227, 227);
     position: fixed;
     width: 220px;
+    border: fixed;
     font-size: 20px;
     margin: 10px;
     text-align: left;
     text-indent: 2px;
     padding-left: 5px;
     height: 800px;
+
 }
 
 .task-searchbox{

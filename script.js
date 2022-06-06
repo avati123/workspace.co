@@ -1,11 +1,15 @@
+const tasksContainer = document.getElementById("tasks-container");
 const submit = document.getElementById("submit-btn");
+let newTask;
 inputBox = document.getElementById("task-add");
 submit.onclick = () =>{
     addTask()
+    addTaskElement();
 }
 
+
 addTask = () => {
-    let newTask = document.getElementById("task-add").value;
+    newTask = document.getElementById("task-add").value;
     document.getElementById('task-add').value = ''
     console.log(newTask);
 }
@@ -17,10 +21,10 @@ inputBox.addEventListener("keypress", function(event){
 })
 
 addTaskElement = () => {
-    const newTaskDiv = document.createElement("div");
-    const newTaskInfo = document.createElement("h3");
-    newTaskInfo.appendChild(newTaskDiv);
-
+    let hi = document.createElement("h3")
+    hi.innerText = newTask;
+    tasksContainer.appendChild(hi);
+    
 }
 
 
