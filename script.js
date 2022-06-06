@@ -1,6 +1,5 @@
 const tasksContainer = document.getElementById("tasks-container");
 const submit = document.getElementById("submit-btn");
-let newTask;
 inputBox = document.getElementById("task-add");
 submit.onclick = () =>{
     addTask()
@@ -24,7 +23,6 @@ addTaskElement = () => {
     let hi = document.createElement("h3")
     hi.innerText = newTask;
     tasksContainer.appendChild(hi);
-    
 }
 
 
