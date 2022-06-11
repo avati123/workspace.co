@@ -20,9 +20,9 @@ inputBox.addEventListener("keypress", function(event){
 })
 
 addTaskElement = () => {
-    let hi = document.createElement("h3")
+    let newTaskEntry = document.createElement("h3")
     hi.innerText = newTask;
-    tasksContainer.appendChild(hi);
+    tasksContainer.appendChild(newTaskEntry);
 }
 
 
